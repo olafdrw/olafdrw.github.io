@@ -7,7 +7,7 @@ body, html {
 }
 
 body {
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 a {
@@ -253,7 +253,6 @@ a {
   margin-top: 120px;
   height: 100%;
   width: 100%;
-  margin-left: 7%;
 }
 
 .landing-headline, .landing-text, .landing-button {
@@ -429,6 +428,9 @@ a {
   .team-headline {
     font-size: 32px;
   }
+  .main-inner {
+    margin-left: 7%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -446,5 +448,8 @@ a {
   }
   .team-headline {
     font-size: 45px;
+  }
+  .main-inner {
+    margin-left: 7%;
   }
 }
