@@ -402,6 +402,9 @@ a {
   .team-headline {
     font-size: 28px;
   }
+  .main-inner {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
