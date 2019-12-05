@@ -241,7 +241,7 @@ a {
 
 .main {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   /* background-image: url("andreas-gucklhorn-mawU2PoJWfU-unsplash.jpg");
   background-size: 1000px 600px; */
 }
@@ -327,8 +327,8 @@ a {
 }
 
 .fill-inner {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .fill-title {
@@ -341,6 +341,7 @@ a {
   margin-top: 35px;
   margin-bottom: 15px;
   background-color: #171523;
+  margin-left: 0;
 }
 
 .light-section {
@@ -396,9 +397,6 @@ a {
   }
   .team-headline {
     font-size: 32px;
-  }
-  .main-inner {
-    margin-left: 7%;
   }
 }
 
