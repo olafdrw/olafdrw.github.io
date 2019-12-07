@@ -1,0 +1,451 @@
+/* Olaf Willner, 2019 */
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.email a {
+  color: #C8C8C8;
+}
+
+.pre-header {
+  background: #F3F3F5;
+  width: 100%;
+  height: 40px;
+}
+
+.pre-header-inner {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 10px;
+  float: left;
+}
+
+.header {
+  width: 100%;
+  float: none;
+  display: block;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 999;
+  visibility: visible;
+}
+
+.header-fade-in {
+  width: 100%;
+  height: 90px;
+  float: none;
+  display: block;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,.05);
+  margin-top: -130px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+
+.header-inner {
+  height: 90px;
+  display: block;
+  padding-left: 7%;
+  padding-right: 7%;
+  float: none;
+  border: none;
+}
+
+.title {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  background: transparent;
+  float:left;
+  color: #2d3436;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  height: 100%;
+  position: relative;
+}
+
+.responsive-title {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  background: transparent;
+  text-align: center;
+  color: #2d3436;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  position: relative;
+  float: right;
+  /* display: none; */
+}
+
+.menu-toggle {
+  height: 90px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  float: left;
+  background: transparent;
+  margin-right: 12px;
+}
+
+.hamburger {
+  background: #090832;
+  position: absolute;
+  transition: 0.5s;
+  width: 26px;
+  height: 3px;
+  border-radius: 10px;
+}
+
+.hamburger:before {
+  top: -8px;
+}
+
+.hamburger:after {
+  top: 8px;
+}
+
+.hamburger-one:before {
+  content: '';
+  position:absolute;
+  width: 26px;
+  height: 3px;
+  background:#090832;
+  border-radius: 10px;
+}
+
+.hamburger-one:after {
+  content: '';
+  position:absolute;
+  width: 26px;
+  height: 3px;
+  background:#090832;
+  border-radius: 10px;
+}
+
+.responsive-title-wrapper {
+  height: 100%;
+  width: 55%;
+  margin-right: 0;
+}
+
+.nav-main {
+  float: left;
+}
+
+.nav {
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.nav-title {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  color: #2d3436;
+  font-size:16px;
+  font-weight: 600;
+  float: right;
+  margin-right: 150px;
+  padding-top: 38px;
+  padding-bottom: 15px;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+
+.nav-title:hover {
+  color: #919C9F;
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.nav>a {
+  display: inline-block;
+  text-decoration: none;
+	color: #000;
+	position: relative;
+}
+
+.nav-title>a:after {
+	content: "";
+	position: fixed;
+	height: 3px;
+	background-color: #000000;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.nav>a:hover {
+	color: #000000;
+}
+
+.nav-title>a:hover:after {
+	width: 100%;
+}
+
+.contact-button {
+  margin-top:28px;
+  display:inline-block;
+  color:#FFF;
+  background-color:#171523;
+  border:solid 1px #4c4c4c;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:1px;
+  font-weight:600;
+  padding:1em 2em;
+  -webkit-transition:background-color .14s ease-out,color .14s ease-out;
+  -moz-transition:background-color .14s ease-out,color .14s ease-out;
+  -ms-transition:background-color .14s ease-out,color .14s ease-out;
+  -o-transition:background-color .14s ease-out,color .14s ease-out;
+  transition:background-color .14s ease-out,color .14s ease-out;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  float: right;
+  display: inline-block;
+}
+
+.contact-button:hover {
+  background-color:#2d3436;
+  color:#FFF;
+}
+
+.main {
+  height: 70vh;
+  width: 100%;
+  /* background-image: url("andreas-gucklhorn-mawU2PoJWfU-unsplash.jpg");
+  background-size: 1000px 600px; */
+}
+
+.main-inner {
+  margin-top: 120px;
+  height: 100%;
+}
+
+.landing-headline, .landing-text, .landing-button {
+  display: block;
+}
+
+.headline {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.team-headline {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  color: #2d3436;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.text {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  color: #A4A4A4;
+  font-size: 26px;
+  font-weight: 300;
+  position: relative;
+  margin-top: 0;
+}
+
+.poll-button {
+  margin-top: 100px;
+  display: block;
+  color: #FFF;
+  background-color:#43BEFE;
+  border:none;
+  font-size:22px;
+  text-decoration:none;
+  font-weight:600;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 45px;
+  padding-right: 45px;
+  box-shadow: -1px 10px 25px #CCCCCC;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poll-button:hover {
+  -webkit-transition:background-color .14s ease-out,color .14s ease-out;
+  -moz-transition:background-color .14s ease-out,color .14s ease-out;
+  -ms-transition:background-color .14s ease-out,color .14s ease-out;
+  -o-transition:background-color .14s ease-out,color .14s ease-out;
+  transition:background-color .14s ease-out,color .14s ease-out;
+  color:#FFF;
+}
+
+.fill-section {
+  margin-top: 0px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  clear: both;
+  background-color: #171523;
+  z-index: 0;
+  position: relative;
+}
+
+.fill-inner {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.fill-title {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  background-color: #171523;
+  margin-left: 0;
+}
+
+.light-section {
+  margin-top: 0px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  clear: both;
+  background-color: #ffffff;
+  z-index: 0;
+  position: relative;
+}
+
+.footer {
+  margin-top: 100px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  clear: both;
+  background-color: #E9F0F7;
+  z-index: 0;
+  position: relative;
+}
+
+
+
+/* Responsive styling */
+
+@media only screen and (max-width: 768px) {
+  .nav-main {
+    display: none;
+  }
+  .headline {
+    font-size: 35px;
+    text-align: center;
+  }
+  .text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .title {
+    display: none;
+  }
+  .responsive-title {
+    display: visible;
+  }
+  .contact-button {
+    display: none;
+  }
+  .team-headline {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .nav-main {
+    display: none;
+  }
+  .headline {
+    font-size: 36px;
+    text-align: left;
+  }
+  .text {
+    font-size: 22px;
+    text-align: left;
+  }
+  .poll-button {
+    float: left;
+  }
+  .responsive-title {
+    display: none;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .team-headline {
+    font-size: 32px;
+  }
+  .main-inner {
+    margin-left: 7%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .headline {
+    font-size: 42px;
+  }
+  .poll-button {
+    float: left;
+  }
+  .responsive-title, .responsive-title-wrapper {
+    display: none;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .team-headline {
+    font-size: 45px;
+  }
+  .main-inner {
+    margin-left: 7%;
+  }
+}
