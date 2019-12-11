@@ -3,12 +3,11 @@
 <html>
 <head>
   <meta charset='UTF-8'>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <meta https-equiv='X-UA-Compatible' content='ie=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
   <link rel='stylesheet' href='stylesheet.css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap' rel='stylesheet'>
-  <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src='script.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <link rel='shortcut icon' type='image/png' href='cvl-letter.png'/>
   <title>CVL</title>
 </head>
@@ -102,19 +101,19 @@
       <h1 class='footer-title'>Footer</h1>
     </div>
   </section>
-  <script src='http://code.jquery.com/jquery-latest.js'></script>
+  <script src='https://code.jquery.com/jquery-latest.js'></script>
   <script type='text/javascript'>
-(function($) {
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('.header-fade-in').fadeIn(150);
-            } else {
-                $('.header-fade-in').fadeOut(100);
-            }
+    (function($) {
+        $(window).load(function() {
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.header-fade-in').fadeIn(150);
+                } else {
+                    $('.header-fade-in').fadeOut(100);
+                }
+            });
         });
-    });
-})(jQuery);;
+    })(jQuery);
 </script>
 </body>
 </html>
